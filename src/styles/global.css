@@ -1,0 +1,255 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.App-logo {
+  height: 1em;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section.home {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  flex-direction: column;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar {
+  height: 8%;
+  width: 8%;
+  border: 0px solid black;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  overflow-wrap: break-word;
+}
+
+.greeting {
+  display: block;
+  text-align: none;
+  align-content: flex-start;
+}
+
+.icon {
+  height: 1em;
+  width: 1em;
+  display: inline-flex;
+  align-self: center;
+  top: 0.125em;
+  left: 0.125em;
+  position: relative;
+}
+
+.link {
+  height: 1.5em;
+  width: 1.5em;
+  margin-left: 10px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 2em;
+  text-decoration: none;
+  color: rgb(41, 49, 172);
+}
+
+.links-wrapper {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.routing {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  letter-spacing: 0.2em;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.routing a {
+  margin-right: 10px;
+  color: rgb(30, 29, 82);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 70%;
+  margin: 40px auto;
+  height: 50%;
+  font-size: 1em;
+}
+
+.card p {
+  font-size: 1em;
+}
+
+.card h1 {
+  font-size: 1em;
+}
+
+.card img {
+  width: 100%;
+  height: 40%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.content-wrap {
+  margin: 20px;
+}
+
+.content-wrap p {
+  line-height: 1.7em;
+}
+
+.tags {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 10%;
+}
+
+.tag {
+  border: 0px solid black;
+  background-color: rgb(255, 206, 115);
+  color: rgb(65, 67, 73);
+  padding: 5px;
+  border-radius: 10%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 20%;
+    width: 40%;
+  }
+
+  .section.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    padding: 0;
+    height: 20%;
+    width: 20%;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .section.home {
+    font-size: 1.5em;
+  }
+
+  .section.home p {
+    font-size: 1em;
+  }
+}
+
+.title a {
+  font-size: 1em;
+}
+
+.blog-list {
+  padding: 5%;
+  word-wrap: none;
+}
+
+.blog-entry {
+  border: 0.5px solid black;
+  padding: 10px;
+  background-color: paleturquoise;
+  border-radius: 10px;
+}
+
+.contact-form {
+  padding: 5px;
+}
+.contact-form * {
+  display: block;
+  margin: 10px;
+}
