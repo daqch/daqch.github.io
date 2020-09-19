@@ -23,18 +23,19 @@ export default function Home() {
         </div>
         <div className="greeting">
           <h1>Hi! I'm Diego.</h1>
+          <p>
+            I'm a <span style={{ color: "#61dafb" }}>React</span>
+            <span style={{ color: "orange" }}>&lt;WebDev/&gt; </span>{" "}
+            enthusiast!
+          </p>
+          <p>
+            I'm currently studiyng Computer Science at the University of
+            Victoria <img src={flag} alt="ca" className="icon" /> .
+          </p>
+          <p>Feel free to contact me anytime!</p>
+          <p>You can also check my projects.</p>
         </div>
-        <div className="imgwrap"></div>
-        <p>
-          I'm a <span style={{ color: "#61dafb" }}>React</span>
-          <span style={{ color: "orange" }}>&lt;WebDev/&gt; </span> enthusiast!
-        </p>
-        <p>
-          I'm currently studiyng Computer Science at the University of Victoria{" "}
-          <img src={flag} alt="ca" className="icon" /> .
-        </p>
-        <p>Feel free to contact me anytime!</p>
-        <p>You can also check my projects.</p>
+
         <div className="navigation">
           <div className="arrow">
             <a href="#projects">&#x2193;</a>
@@ -95,7 +96,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer>&#169; Diego Aquino Chavez 2020</footer>
+      <footer> Diego Aquino Chavez 2020</footer>
     </div>
   )
 }

@@ -8,7 +8,7 @@ export default function Blog() {
       </a>
       <h1>Blog.</h1>
       <div className="blog-list">
-        <div className="blog-entry">
+        <div className="card blog-entry">
           <a href="/blog/creating-a-playback-control-for-html5-video">
             <h3 className="blog-link">
               Creating a playback control for html5 video
