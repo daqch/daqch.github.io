@@ -46,11 +46,11 @@ export default function Home() {
         <div className="card">
           <div className="img-wrap">
             {" "}
-            <img src={wmp}></img>
+            <img src={wmp} alt="wmp preview"></img>
           </div>
           <div className="content-wrap">
             <h1 className="title">
-              <a href="#">WEEKLYMPLUS</a>
+              <a href="https://github.com/daqch/weeklymplus">WEEKLYMPLUS</a>
             </h1>
             <p>Full-Stack application with user authentication</p>
             <div className="tags">
@@ -64,7 +64,7 @@ export default function Home() {
 
         <div className="card">
           <div className="img-wrap">
-            <img src={box}></img>
+            <img src={box} alt="5box preview"></img>
           </div>
           <div className="content-wrap">
             {" "}
@@ -80,12 +80,15 @@ export default function Home() {
         </div>
         <div className="card">
           <div className="img-wrap">
-            <img src={portfolio}></img>
+            <img src={portfolio} alt="portfolio preview"></img>
           </div>
           <div className="content-wrap">
             {" "}
             <h1 className="title">
-              <a href="#"> DIEGOAQUINO.ME</a>
+              <a href="https://github.com/daqch/diegoaquino.me">
+                {" "}
+                DIEGOAQUINO.ME
+              </a>
             </h1>
             <p>Personal website and portfolio</p>
             <div className="tags">
