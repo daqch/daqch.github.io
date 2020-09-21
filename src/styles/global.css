@@ -1,9 +1,16 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-body {
-  font-family: "Kumbh Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-logo {
@@ -19,7 +26,6 @@ body {
 
 p {
   font-weight: 300;
-  font-size: 20px;
 }
 
 .section {
@@ -27,11 +33,12 @@ p {
 }
 
 .section.home {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  vertical-align: middle;
-  flex-direction: column;
+  font-size: 1.25em;
+  min-height: 75vh;
+  margin: 100px auto;
+  margin-bottom: 0px;
+  width: 90%;
+  line-break: strict;
 }
 
 .App-link {
@@ -70,7 +77,13 @@ h2 {
 }
 
 .greeting {
-  line-height: 3em;
+  margin-top: 25px;
+  line-height: 2.5em;
+}
+
+.greeting p {
+  font-size: 1.1em;
+  font-weight: 200;
 }
 
 .icon {
@@ -90,13 +103,14 @@ h2 {
 }
 
 .arrow {
-  font-size: 2em;
+  margin-top: 20%;
+  font-size: 1em;
   text-decoration: none;
   color: rgb(41, 49, 172);
+  text-align: center;
 }
 
 .links-wrapper {
-  position: absolute;
   top: 0;
   margin-top: 20px;
   margin-left: 20px;
@@ -117,8 +131,8 @@ a {
 
 .routing {
   display: flex;
+  margin-left: auto;
   justify-content: space-between;
-  position: absolute;
   top: 0;
   right: 0;
   padding: 30px;
@@ -251,4 +265,10 @@ a:visited {
 
 a {
   color: inherit;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

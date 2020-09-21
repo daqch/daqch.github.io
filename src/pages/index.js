@@ -9,7 +9,7 @@ import portfolio from "../assets/portfolio.jpg"
 export default function Home() {
   return (
     <div className="wrapper">
-      <div className="section home">
+      <div className="navbar">
         <div className="links-wrapper">
           <a href="https://github.com/daqch">
             <img src={ghub} alt="github-icon" className="link" />
@@ -20,12 +20,15 @@ export default function Home() {
         </div>
         <div className="routing">
           <a href="/blog">BLOG</a>
+          <a href="/resume">RESUME</a>
         </div>
+      </div>
+      <div className="section home">
+        <h1>Hi! I'm Diego.</h1>
         <div className="greeting">
-          <h1>Hi! I'm Diego.</h1>
           <p>
-            I'm a <span style={{ color: "#61dafb" }}>React</span>
-            <span style={{ color: "orange" }}>&lt;WebDev/&gt; </span>{" "}
+            I'm a <span style={{ color: "#61dafb" }}>React</span> and
+            <span style={{ color: "orange" }}> &lt;WebDev/&gt; </span>{" "}
             enthusiast!
           </p>
           <p>
