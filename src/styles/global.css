@@ -77,13 +77,13 @@ h2 {
 }
 
 .greeting {
-  margin-top: 25px;
+  margin-top: 20px;
   line-height: 2.5em;
 }
 
 .greeting p {
   font-size: 1.1em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .icon {
