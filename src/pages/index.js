@@ -36,7 +36,7 @@ export default function Home() {
             Victoria <img src={flag} alt="ca" className="icon" /> .
           </p>
           <p>Feel free to contact me anytime!</p>
-          <p>You can also check my projects.</p>
+          <p>You can also check my projects:</p>
         </div>
 
         <div className="navigation">
