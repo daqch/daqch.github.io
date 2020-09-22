@@ -5,6 +5,7 @@ import box from "../assets/5box.jpg"
 import wmp from "../assets/wmp.jpg"
 import tw from "../assets/Twitter_Logo_Blue.svg"
 import portfolio from "../assets/portfolio.jpg"
+import resume from "../assets/public-resume.pdf"
 
 export default function Home() {
   return (
@@ -20,11 +21,13 @@ export default function Home() {
         </div>
         <div className="routing">
           <a href="/blog">BLOG</a>
-          <a href="/resume">RESUME</a>
+          <a href={resume}>RESUME</a>
         </div>
       </div>
       <div className="section home">
-        <h1>Hi! I'm Diego.</h1>
+        <h1>
+          Hi! I'm <span className="connected"></span>Diego.
+        </h1>
         <div className="greeting">
           <p>
             I'm a <span style={{ color: "#61dafb" }}>React</span> and
