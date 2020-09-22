@@ -1,8 +1,13 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
 export default function Blog() {
   return (
     <div className="section">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Blog</title>
+      </Helmet>
       <a href="/">
         <div>Back</div>
       </a>

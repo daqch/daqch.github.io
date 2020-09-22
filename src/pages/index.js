@@ -6,10 +6,15 @@ import wmp from "../assets/wmp.jpg"
 import tw from "../assets/Twitter_Logo_Blue.svg"
 import portfolio from "../assets/portfolio.jpg"
 import resume from "../assets/public-resume.pdf"
+import { Helmet } from "react-helmet"
 
 export default function Home() {
   return (
     <div className="wrapper">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
       <div className="navbar">
         <div className="links-wrapper">
           <a href="https://github.com/daqch">
