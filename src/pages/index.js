@@ -1,11 +1,11 @@
 import React from "react"
 import ghub from "../assets/GitHub-Mark-120px-plus.png"
-import flag from "../assets/flag-canada_1f1e8-1f1e6.png"
 import box from "../assets/5box.jpg"
 import wmp from "../assets/wmp.jpg"
 import tw from "../assets/Twitter_Logo_Blue.svg"
 import portfolio from "../assets/portfolio.jpg"
 import resume from "../assets/public-resume.pdf"
+import vancouver from "../assets/vancouver3.jpg"
 import { Helmet } from "react-helmet"
 
 export default function Home() {
@@ -15,45 +15,52 @@ export default function Home() {
         <meta charSet="utf-8" />
         <title>Home</title>
       </Helmet>
-      <div className="navbar">
-        <div className="links-wrapper">
-          <a href="https://github.com/daqch">
-            <img src={ghub} alt="github-icon" className="link" />
-          </a>
-          <a href="https://twitter.com/diego_aquino0">
-            <img src={tw} alt="tw-icon" className="link" />
-          </a>
-        </div>
-        <div className="routing">
-          <a href="/blog">BLOG</a>
-          <a href={resume}>RESUME</a>
-        </div>
-      </div>
-      <div className="section home">
-        <h1>
-          Hi! I'm <span className="connected"></span>Diego.
-        </h1>
-        <div className="greeting">
-          <p>
-            I'm a <span style={{ color: "#61dafb" }}>React</span> and
-            <span style={{ color: "orange" }}> &lt;WebDev/&gt; </span>{" "}
-            enthusiast!
-          </p>
-          <p>
-            I'm currently studiyng Computer Science at the University of
-            Victoria <img src={flag} alt="ca" className="icon" /> .
-          </p>
-          <p>Feel free to contact me anytime!</p>
-          <p>You can also check my projects:</p>
-        </div>
 
-        <div className="navigation">
-          <div className="arrow">
-            <a href="#projects">&#x2193;</a>
+      <div
+        className="section home"
+        style={{
+          backgroundImage: `linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)
+          ),url(${vancouver})`,
+        }}
+      >
+        <div className="navbar">
+          <div className="links-wrapper">
+            <a href="https://github.com/daqch">
+              <img src={ghub} alt="github-icon" className="link" />
+            </a>
+            <a href="https://twitter.com/diego_aquino0">
+              <img src={tw} alt="tw-icon" className="link" />
+            </a>
+          </div>
+
+          <div className="routing">
+            <a href="/blog">BLOG</a>
+            <a href={resume}>RESUME</a>
+          </div>
+        </div>
+        <div className="content">
+          <div className="greeting">
+            <h1>
+              <span className="connected"></span>
+              <span>Diego</span> Aquino
+            </h1>
+            <p>
+              Web Enthusiast | CS student at UVic
+              <span className="blink">_</span>
+            </p>
+            <div className="sections">
+              <a href="#projects">Projects</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
           </div>
         </div>
       </div>
       <div className="section projects" id="projects">
+        <h1 style={{ padding: "1em", alignSelf: "flex-start" }}>Projects:</h1>
         <div className="card">
           <div className="img-wrap">
             {" "}
@@ -110,7 +117,40 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer> Diego Aquino Chavez 2020</footer>
+      <div id="about" className="section about">
+        <h1>Hello world!</h1>
+        <p>I'm an in-training web developer based in Victoria, BC, Canada.</p>
+        <p>
+          I discovered React in 2018 and since then I have been learning Front
+          and Back-End development.
+        </p>
+        <p>I'm always willing to learn new technologies.</p>
+        <p>
+          Recently, I started working with GraphQL and I am currently
+          transfering my projects and creating new ones with ApolloGraphQL.
+        </p>
+      </div>
+      <div id="contact" className="section contact">
+        <h2>
+          Please, feel free to contact me to talk about Web Development,
+          Programming or anything really!
+        </h2>
+        <form
+          action="https://getform.io/f/3d1c0d74-8305-4d9e-9c3e-842b7fc12d4f"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Name"></input>
+          <input type="email" name="email" placeholder="E-mail"></input>
+          <textarea
+            style={{ height: "200px" }}
+            className="message"
+            placeholder="Message"
+            type="text"
+            name="message"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   )
 }
