@@ -192,7 +192,7 @@ export default function Home() {
           I discovered React in 2018 and since then I have been learning Front
           and Back-End development.
         </p>
-        <p>I'm always willing to learn new technologies.</p>
+        <p>I'm always willing to work with new technologies.</p>
         <p>
           Recently, I started working with GraphQL and I am currently
           transfering my projects and creating new ones with ApolloGraphQL.
