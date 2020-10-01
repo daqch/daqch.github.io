@@ -79,7 +79,6 @@ p {
 .greeting p {
   font-size: 0.7em;
   font-weight: 500;
-  text-shadow: 0 3px 0 black;
   color: rgb(162, 163, 163);
 }
 

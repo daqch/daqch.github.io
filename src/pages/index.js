@@ -13,7 +13,7 @@ import "sal.js/dist/sal.css"
 export default function Home() {
   useEffect(() => {
     sal({
-      once: false,
+      threshold: 0.1,
     })
   }, [])
 
@@ -34,7 +34,14 @@ export default function Home() {
           ),url(${vancouver})`,
         }}
       >
-        <div className="navbar">
+        <div
+          data-sal="slide-up"
+          data-sal-duration="600"
+          data-sal-delay="200"
+          data-sal-easing="ease-out-back"
+          className="card"
+          className="navbar"
+        >
           <div className="links-wrapper">
             <a href="https://github.com/daqch">
               <img src={ghub} alt="github-icon" className="link" />
@@ -44,7 +51,14 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="routing">
+          <div
+            data-sal="slide-up"
+            data-sal-duration="600"
+            data-sal-delay="200"
+            data-sal-easing="ease-out-back"
+            className="card"
+            className="routing"
+          >
             <a href="/blog">BLOG</a>
             <a href={resume}>RESUME</a>
           </div>
@@ -70,33 +84,15 @@ export default function Home() {
               <span className="blink">_</span>
             </p>
             <div
-              data-sal="slide-up"
+              data-sal="flip-right"
               data-sal-duration="1200"
               data-sal-delay="100"
               data-sal-easing="ease-out-back"
               className="sections"
             >
-              <a
-                data-sal="slide-up"
-                data-sal-easing="ease-out-back"
-                href="#projects"
-              >
-                Projects
-              </a>
-              <a
-                data-sal="zslide-up"
-                data-sal-easing="ease-out-back"
-                href="#about"
-              >
-                About
-              </a>
-              <a
-                data-sal="slide-up"
-                data-sal-easing="ease-out-back"
-                href="#contact"
-              >
-                Contact
-              </a>
+              <a href="#projects">Projects</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
             </div>
           </div>
         </div>
@@ -104,8 +100,6 @@ export default function Home() {
       <div className="section projects" id="projects">
         <h1
           data-sal="slide-right"
-          data-sal-duration="1200"
-          data-sal-easing="ease-out-back"
           style={{ padding: "1em", alignSelf: "flex-start" }}
         >
           Projects:
@@ -138,7 +132,7 @@ export default function Home() {
         <div
           data-sal="slide-up"
           data-sal-duration="1200"
-          data-sal-delay="300"
+          data-sal-delay="200"
           data-sal-easing="ease-out-back"
           className="card"
         >
@@ -160,7 +154,7 @@ export default function Home() {
         <div
           data-sal="slide-up"
           data-sal-duration="1200"
-          data-sal-delay="500"
+          data-sal-delay="300"
           data-sal-easing="ease-out-back"
           className="card"
         >
