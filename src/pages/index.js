@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import ghub from "../assets/GitHub-Mark-120px-plus.png"
 import box from "../assets/5box.jpg"
 import wmp from "../assets/wmp.jpg"
@@ -7,8 +7,16 @@ import portfolio from "../assets/portfolio.jpg"
 import resume from "../assets/public-resume.pdf"
 import vancouver from "../assets/vancouver3.jpg"
 import { Helmet } from "react-helmet"
+import sal from "sal.js"
+import "sal.js/dist/sal.css"
 
 export default function Home() {
+  useEffect(() => {
+    sal({
+      once: false,
+    })
+  }, [])
+
   return (
     <div className="wrapper">
       <Helmet>
@@ -43,25 +51,72 @@ export default function Home() {
         </div>
         <div className="content">
           <div className="greeting">
-            <h1>
+            <h1
+              data-sal="slide-up"
+              data-sal-duration="1200"
+              data-sal-delay="100"
+              data-sal-easing="ease-out-back"
+            >
               <span className="connected"></span>
               <span>Diego</span> Aquino
             </h1>
-            <p>
+            <p
+              data-sal="slide-up"
+              data-sal-duration="1200"
+              data-sal-delay="100"
+              data-sal-easing="ease-out-back"
+            >
               Web Enthusiast | CS student at UVic
               <span className="blink">_</span>
             </p>
-            <div className="sections">
-              <a href="#projects">Projects</a>
-              <a href="#about">About</a>
-              <a href="#contact">Contact</a>
+            <div
+              data-sal="slide-up"
+              data-sal-duration="1200"
+              data-sal-delay="100"
+              data-sal-easing="ease-out-back"
+              className="sections"
+            >
+              <a
+                data-sal="slide-up"
+                data-sal-easing="ease-out-back"
+                href="#projects"
+              >
+                Projects
+              </a>
+              <a
+                data-sal="zslide-up"
+                data-sal-easing="ease-out-back"
+                href="#about"
+              >
+                About
+              </a>
+              <a
+                data-sal="slide-up"
+                data-sal-easing="ease-out-back"
+                href="#contact"
+              >
+                Contact
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div className="section projects" id="projects">
-        <h1 style={{ padding: "1em", alignSelf: "flex-start" }}>Projects:</h1>
-        <div className="card">
+        <h1
+          data-sal="slide-right"
+          data-sal-duration="1200"
+          data-sal-easing="ease-out-back"
+          style={{ padding: "1em", alignSelf: "flex-start" }}
+        >
+          Projects:
+        </h1>
+        <div
+          data-sal="slide-up"
+          data-sal-duration="1200"
+          data-sal-delay="100"
+          data-sal-easing="ease-out-back"
+          className="card"
+        >
           <div className="img-wrap">
             {" "}
             <img src={wmp} alt="wmp preview"></img>
@@ -80,7 +135,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card">
+        <div
+          data-sal="slide-up"
+          data-sal-duration="1200"
+          data-sal-delay="300"
+          data-sal-easing="ease-out-back"
+          className="card"
+        >
           <div className="img-wrap">
             <img src={box} alt="5box preview"></img>
           </div>
@@ -96,7 +157,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div
+          data-sal="slide-up"
+          data-sal-duration="1200"
+          data-sal-delay="500"
+          data-sal-easing="ease-out-back"
+          className="card"
+        >
           <div className="img-wrap">
             <img src={portfolio} alt="portfolio preview"></img>
           </div>
@@ -117,7 +184,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="about" className="section about">
+      <div
+        data-sal="fade"
+        data-sal-duration="1200"
+        data-sal-delay="100"
+        data-sal-easing="ease-out-back"
+        id="about"
+        className="section about"
+      >
         <h1>Hello world!</h1>
         <p>I'm an in-training web developer based in Victoria, BC, Canada.</p>
         <p>
