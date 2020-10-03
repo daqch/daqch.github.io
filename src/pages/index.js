@@ -1,21 +1,24 @@
-import React, { useEffect } from "react"
-import ghub from "../assets/GitHub-Mark-120px-plus.png"
-import box from "../assets/5box.jpg"
-import wmp from "../assets/wmp.jpg"
-import tw from "../assets/Twitter_Logo_Blue.svg"
-import portfolio from "../assets/portfolio.jpg"
-import resume from "../assets/public-resume.pdf"
-import vancouver from "../assets/vancouver3.jpg"
-import { Helmet } from "react-helmet"
-import sal from "sal.js"
-import "sal.js/dist/sal.css"
+import React, { useEffect } from "react";
+import ghub from "../assets/GitHub-Mark-120px-plus.png";
+import box from "../assets/5box.jpg";
+import wmp from "../assets/wmp.jpg";
+import tw from "../assets/Twitter_Logo_Blue.svg";
+import portfolio from "../assets/portfolio.jpg";
+import resume from "../assets/public-resume.pdf";
+import vancouver from "../assets/vancouver3.jpg";
+import { Helmet } from "react-helmet";
+import sal from "sal.js";
+import "sal.js/dist/sal.css";
+import message from "../assets/Envelope_alt_font_awesome.svg.png";
+import user from "../assets/1200px-User_font_awesome.svg.png";
+import hammer from "../assets/1200px-Hammer_-_Noun_project_1306.svg.png";
 
 export default function Home() {
   useEffect(() => {
     sal({
       threshold: 0.1,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <div className="wrapper">
@@ -90,9 +93,15 @@ export default function Home() {
               data-sal-easing="ease-out-back"
               className="sections"
             >
-              <a href="#projects">Projects</a>
-              <a href="#about">About</a>
-              <a href="#contact">Contact</a>
+              <a href="#projects">
+                <img src={hammer} className="icon"></img>Projects
+              </a>
+              <a href="#about">
+                <img src={user} className="icon"></img>About
+              </a>
+              <a href="#contact">
+                <img src={message} className="icon"></img>Contact
+              </a>
             </div>
           </div>
         </div>
@@ -220,5 +229,5 @@ export default function Home() {
         </form>
       </div>
     </div>
-  )
+  );
 }
