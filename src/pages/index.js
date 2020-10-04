@@ -23,6 +23,19 @@ export default function Home() {
   return (
     <div className="wrapper">
       <Helmet>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-175527990-2"
+        ></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${googleAnalyticsId});
+        `}
+        </script>
+
         <meta charSet="utf-8" />
         <title>Home</title>
       </Helmet>
