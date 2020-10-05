@@ -28,12 +28,11 @@ export default function Home() {
           src="https://www.googletagmanager.com/gtag/js?id=UA-175527990-2"
         ></script>
         <script>
-          {`
-          window.dataLayer = window.dataLayer || [];
+          {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', ${googleAnalyticsId});
-        `}
+        
+          gtag('config', 'UA-175527990-2');`}
         </script>
 
         <meta charSet="utf-8" />
