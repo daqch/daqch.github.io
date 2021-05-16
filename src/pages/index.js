@@ -61,7 +61,7 @@ export default function Home() {
             <a href="https://github.com/daqch">
               <img src={ghub} alt="github-icon" className="link" />
             </a>
-            <a href="https://twitter.com/diego_aquino0">
+            <a href="#">
               <img src={tw} alt="tw-icon" className="link" />
             </a>
           </div>
