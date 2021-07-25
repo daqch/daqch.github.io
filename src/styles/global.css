@@ -201,16 +201,26 @@ a {
   font-size: 1em;
 }
 
-.blog-list {
-  padding: 5%;
-  word-wrap: none;
-}
-
 .blog-entry {
   border: 0.5px solid black;
   padding: 10px;
   background-color: paleturquoise;
   border-radius: 10px;
+}
+
+.blog-post,
+.container {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.blog-post,
+.content {
+  min-height: 0;
+}
+
+.blog > p {
+  margin-bottom: 15px;
 }
 
 .contact-form {

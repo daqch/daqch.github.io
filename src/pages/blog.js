@@ -1,9 +1,16 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
+import PostLink from "../components/post-link";
+import "../styles/blog.css";
 
-export default function Blog() {
+export default function Blog({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) {
   return (
-    <div className="section">
+    <div className="blog container">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Blog</title>
@@ -11,16 +18,30 @@ export default function Blog() {
       <a href="/">
         <div>Back</div>
       </a>
-      <h1>Blog.</h1>
+      <h1>The Blog</h1>
       <div className="blog-list">
-        <div className="card blog-entry">
-          <a href="/blog/creating-a-playback-control-for-html5-video">
-            <h3 className="blog-link">
-              Creating a playback control for html5 video
-            </h3>
-          </a>
-        </div>
+        {edges.map((edge) => (
+          <PostLink key={edge.node.id} post={edge.node}></PostLink>
+        ))}
       </div>
     </div>
-  )
+  );
 }
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+          }
+        }
+      }
+    }
+  }
+`;
