@@ -4,7 +4,7 @@ import box from "../assets/5box.jpg";
 import wmp from "../assets/wmp.jpg";
 import tw from "../assets/Twitter_Logo_Blue.svg";
 import portfolio from "../assets/portfolio.jpg";
-import resume from "../assets/public-resume.pdf";
+import resume from "../assets/resume-public.pdf";
 import vancouver from "../assets/vancouver3.jpg";
 import { Helmet } from "react-helmet";
 import sal from "sal.js";
@@ -61,9 +61,6 @@ export default function Home() {
             <a href="https://github.com/daqch">
               <img src={ghub} alt="github-icon" className="link" />
             </a>
-            <a href="#">
-              <img src={tw} alt="tw-icon" className="link" />
-            </a>
           </div>
 
           <div
@@ -95,7 +92,7 @@ export default function Home() {
               data-sal-delay="100"
               data-sal-easing="ease-out-back"
             >
-              Web Enthusiast | CS student at UVic
+              Full-Stack Developer | CS student at UVic
               <span className="blink">_</span>
             </p>
             <div
@@ -207,16 +204,19 @@ export default function Home() {
         id="about"
         className="section about"
       >
-        <h1>Hello world!</h1>
-        <p>I'm an in-training web developer based in Victoria, BC, Canada.</p>
+        <h1>Hey there</h1>
+        <p>I'm a (almost graduated) Computer Science student at UVic.</p>
         <p>
-          I discovered React in 2018 and since then I have been learning Front
-          and Back-End development.
+          I'm currently on a Co-op term, so far working with the LAMP stack and
+          learning React in my personal projects.
         </p>
-        <p>I'm always willing to work with new technologies.</p>
         <p>
-          Recently, I started working with GraphQL and I am currently
-          transfering my projects and creating new ones with ApolloGraphQL.
+          My favorite programming languages are PHP and JavaScript. Though, I
+          still find myself using Python from time to time.
+        </p>
+        <p>
+          When I'm not coding, I enjoy watching football matches and making
+          music.
         </p>
       </div>
       <div id="contact" className="section contact">
