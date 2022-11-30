@@ -54,8 +54,7 @@ export default function Home() {
           data-sal-duration="600"
           data-sal-delay="200"
           data-sal-easing="ease-out-back"
-          className="card"
-          className="navbar"
+          className="card navbar"
         >
           <div className="links-wrapper">
             <a href="https://github.com/daqch">
@@ -68,8 +67,7 @@ export default function Home() {
             data-sal-duration="600"
             data-sal-delay="200"
             data-sal-easing="ease-out-back"
-            className="card"
-            className="routing"
+            className="card routing"
           >
             <a href="/blog">BLOG</a>
             <a href={resume}>RESUME</a>
@@ -92,7 +90,7 @@ export default function Home() {
               data-sal-delay="100"
               data-sal-easing="ease-out-back"
             >
-              Full-Stack Developer | CS student at UVic
+              Software Developer
               <span className="blink">_</span>
             </p>
             <div
@@ -205,14 +203,13 @@ export default function Home() {
         className="section about"
       >
         <h1>Hey there</h1>
-        <p>I'm a (almost graduated) Computer Science student at UVic.</p>
+        <p>I'm a recent UVic Computer Science graduate.</p>
         <p>
-          I'm currently on a Co-op term, so far working with the LAMP stack and
-          learning React in my personal projects.
+          I'm currently looking for a job! I have 16 months of professional experience and I'm interesed in remote opportunities.
         </p>
         <p>
           My favorite programming languages are PHP and JavaScript. Though, I
-          still find myself using Python from time to time.
+          still find myself using Python from time to time. You can give a look to my resume <a className="icon" href={resume}>here</a>
         </p>
         <p>
           When I'm not coding, I enjoy watching football matches and making
