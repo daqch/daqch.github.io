@@ -54,7 +54,7 @@ export default function Home() {
           data-sal-duration="600"
           data-sal-delay="200"
           data-sal-easing="ease-out-back"
-          className="card navbar"
+          className="navbar"
         >
           <div className="links-wrapper">
             <a href="https://github.com/daqch">
@@ -67,7 +67,8 @@ export default function Home() {
             data-sal-duration="600"
             data-sal-delay="200"
             data-sal-easing="ease-out-back"
-            className="card routing"
+            className= "routing"
+            
           >
             <a href="/blog">BLOG</a>
             <a href={resume}>RESUME</a>
