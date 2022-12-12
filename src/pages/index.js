@@ -11,6 +11,7 @@ import sal from "sal.js";
 import "sal.js/dist/sal.css";
 import message from "../assets/Envelope_alt_font_awesome.svg.png";
 import user from "../assets/1200px-User_font_awesome.svg.png";
+import linkedin from "../assets/linkedin-2--v1.png"
 import hammer from "../assets/1200px-Hammer_-_Noun_project_1306.svg.png";
 
 export default function Home() {
@@ -60,6 +61,7 @@ export default function Home() {
             <a href="https://github.com/daqch">
               <img src={ghub} alt="github-icon" className="link" />
             </a>
+            <a href="https://linkedin.com/in/daquinochavez"><img src={linkedin} alt="linkedin-icon" className="link"/></a>
           </div>
 
           <div
